@@ -30,7 +30,7 @@ export const CommentForm = ({ articleId }) => {
       </label>
       <div id="input-container">
         <input
-          id="comment"
+          className="comment"
           value={comment}
           type="text"
           onChange={(e) => setComment(e.currentTarget.value)}

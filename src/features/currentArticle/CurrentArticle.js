@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import {
   isLoadingCurrentArticle,
   selectCurrentArticle,
@@ -13,7 +14,13 @@ export const CurrentArticle = () => {
 
   // Display message when loading current article
   if (isLoading) {
-    return <div>Loading Article...</div>;
+    return (
+      <div>
+        <SkeletonTheme color="#222222" highlightColor="#444">
+          <Skeleton count={3} />
+        </SkeletonTheme>
+      </div>
+    );
   } else if (!article) {
     return null;
   }

@@ -5,6 +5,7 @@ import {
   loadAllPreviews,
   selectAllPreviews,
 } from "./articlePreviewsSlice";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import { loadCurrentArticle } from "../currentArticle/currentArticleSlice";
 import { ArticleListItem } from "../../components/ArticleListItem";
 
@@ -21,18 +22,24 @@ export const ArticlePreviews = () => {
 
   // Display message when loading
   if (isLoading) {
-    return <div>Loading Article Previews...</div>;
+    return (
+      <div>
+        <SkeletonTheme color="#222222" highlightColor="#444">
+          <Skeleton count={3} />
+        </SkeletonTheme>
+      </div>
+    );
   }
   // Jump to top of browser page when selecting an article
   const goTop = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-  }
+  };
 
   return (
     <>
+      <h2 className="section-title">Popular Characters</h2>
       <section className="articles-container">
-        <h2 className="section-title">All Articles</h2>
         {articlePreviews.map((article) => (
           <div
             key={article.id}
