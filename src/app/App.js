@@ -19,7 +19,7 @@ const App = () => {
       <footer>
           Copyright
           <img src="./pics/copyright.png" alt="" />
-          <a href="https://naruto.fandom.com/wiki/Narutopedia" target="_blank">Naruto Fandom</a>
+          <a href="https://naruto.fandom.com/wiki/Narutopedia" target="_blank" rel="noreferrer">Naruto Fandom</a>
       </footer>
     </div>
   );
