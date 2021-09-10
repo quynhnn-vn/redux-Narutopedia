@@ -1,4 +1,4 @@
-# React Redux Project: News Reader
+# React Redux Project: Narutopedia
 Practicing using Redux Toolkit by creating a news reader app:
 - The app fetches and displays a list of all articles in their preview form.
 - It fetches and displays the current article which can be selected and changed by user.
@@ -11,4 +11,4 @@ Run `yarn install` inside the project's root directory (make sure you have Node 
 
 Run `yarn start` and open http://localhost:3000 to view it in the browser.
 
-Open [https://news-reader-qnn.netlify.app/](https://news-reader-qnn.netlify.app/) to view it in deployed verison.
+Open [https://narutopedia-qnn.netlify.app/](https://news-reader-qnn.netlify.app/) to view it in deployed verison.
