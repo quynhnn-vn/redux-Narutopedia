@@ -1,6 +1,6 @@
 # React Redux Project: Narutopedia
-Practicing using Redux Toolkit by creating a news reader app:
-- The app fetches and displays a list of all articles in their preview form.
+Practicing using Redux Toolkit by creating a news reader app for Naruto's characters:
+- The app fetches and displays a list of all Naruto's characters in their preview form.
 - It fetches and displays the current article which can be selected and changed by user.
 - User can view and comment on various articles.
 
